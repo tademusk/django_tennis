@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+  {% with firstname="User" %}
+     <h3> welcome {{firstname}} </h3>
+  {% endwith %}
+
+  {% if x is y %}
+  <h1>YES</h1>
+  {% else %}
+  <h1>NO</h1>
+  {% endif %}
+
+  {% if x == y %}
+    <h1>YES</h1>
+  {% else %}
+    <h1>NO</h1>
+  {% endif %}
+
+<p>In views.py you can see what the fruits variable looks like.</p>
+
+</body>
+</html>

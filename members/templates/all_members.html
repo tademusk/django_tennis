@@ -5,6 +5,8 @@
 {% endblock %}
 
 {% block content %}
+
+<div class="mycard">
 <h1>Members</h1>
 
 <ul>
@@ -12,5 +14,6 @@
      <li><a href="details/{{ x.id }}">{{ x.firstname }} {{ x.lastname }} {{x.phone}}</a></li>
   {%endfor%}
 </ul>
+</div>
 {% endblock %}
 

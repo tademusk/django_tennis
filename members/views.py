@@ -4,7 +4,7 @@ from django.template import loader
 from .models import Member
 
 def members(request):
-    mymembers = Member.objects.filter(firstname='Tade').values()
+    mymembers = Member.objects.all().values()
     template = loader.get_template('all_members.html')
     context = {
         "hello" : mymembers,
@@ -14,7 +14,6 @@ def members(request):
 def first(request):
     template = loader.get_template('first.html')
     return HttpResponse(template.render())
-
 
 def details(request, id):
   mymember = Member.objects.get(id=id)

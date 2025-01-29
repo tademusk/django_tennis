@@ -5,6 +5,7 @@
 {% endblock %}
 
 {% block content %}
+<div class="mycard">
 
 <h1>{{ mymember.firstname }} {{ mymember.lastname }}</h1>
   
@@ -12,5 +13,6 @@
 <p>Member since: {{ mymember.joined_date }}</p>
 
 <p>Back to <a href="/members">Members</a></p>
-
+  
+</div>
 {% endblock %}

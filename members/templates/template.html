@@ -1,5 +1,8 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
+  {% comment %} <link rel="stylesheet" href="{% static 'myfirst.css' %}"> {% endcomment %}
+  <link rel="stylesheet" href="{% static 'myglobal.css' %}">
 <body>
   {%include 'mymenu.html' with me="tade" sponsor="kaldastech"%}
   {% with firstname="User" %}

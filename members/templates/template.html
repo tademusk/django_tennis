@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <body>
-
+  {%include 'mymenu.html' with me="tade" sponsor="kaldastech"%}
   {% with firstname="User" %}
      <h3> welcome {{firstname}} </h3>
   {% endwith %}
@@ -19,6 +19,10 @@
   {% endif %}
 
 <p>In views.py you can see what the fruits variable looks like.</p>
+
+<p>This page contains a footer in a template.</p>
+
+{% include 'footer.html' %} 
 
 </body>
 </html>
